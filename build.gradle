@@ -41,6 +41,7 @@ allprojects {
             implementation project(path: ":${it.name}", configuration: 'devElements')
             include project("${it.name}:") // nest within distribution
         }
+        implementation "com.google.code.gson:gson:2.10.1" // Or the latest stable version
     }
 
     // Perform tests using the JUnit test suite
