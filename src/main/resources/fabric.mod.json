@@ -3,7 +3,7 @@
   "id": "${id}",
   "version": "${version}",
   "name": "${name}",
-  "description": "Lorem ipsum dolor sit amet",
+  "description": "'fuck you' says the guy!",
   "authors": [
     "[fullname]"
   ],
@@ -17,11 +17,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.Example"
+      "com.marc.see-all.Example"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "see-all.mixins.json"
   ],
   "depends": {
     "java": ">=17",
@@ -30,7 +30,7 @@
     "fabric": "*"
   },
   "recommends": {
-    "modid-sub": "*"
+    "see-all-sub": "*"
   },
   "suggests": {
     "modmenu": "*"

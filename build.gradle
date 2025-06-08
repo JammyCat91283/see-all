@@ -24,7 +24,7 @@ loom {
     // The official yarn mappings for the selected Minecraft version.
     // See https://fabricmc.net/develop/build/ for more information.
     // These include Mojang's official method and field names.
-    mappings "net.fabricmc:yarn:1.21.5+build.1" // Updated to 1.21.5 mappings
+    mappings "net.fabricmc:yarn:1.21.5+build.1"
     // Add Fabric API as a dependency.
     // See https://fabricmc.net/develop/build/ for more information.
     // If you plan to update Minecraft versions, you will need to change this.
@@ -33,6 +33,10 @@ loom {
         // Set to true to automatically create a ModMenu entry for your mod.
         // Set to false to disable this feature.
         enabled = false
+    }
+    // Enable mixin generation
+    mixin {
+        defaultRefmapName = "see-all.refmap.json"
     }
 }
 
@@ -50,8 +54,8 @@ repositories {
 
 dependencies {
     // To change the versions of dependencies, see the `gradle.properties` file.
-    minecraft "com.mojang:minecraft:1.21.5" // Updated to 1.21.5
-    mappings "net.fabricmc:yarn:1.21.5+build.1" // Updated to 1.21.5 mappings
+    minecraft "com.mojang:minecraft:1.21.5"
+    mappings "net.fabricmc:yarn:1.21.5+build.1"
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
 }
